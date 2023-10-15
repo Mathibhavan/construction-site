@@ -1,0 +1,78 @@
+
+<div class="container">
+  <img src="assets/About.jpg" alt="AboutUsImg">
+<h5>REGISTRATION WITH CLIENTS AND STATUTORY BODIES</h5><p>We are registered with leading consultants and clients in the field of Industrial Projects, Pharma, Bulk Drugs,
+  Engineering, Textile, Chemical with plot development, Roads etc. Residential Colonies, Institutional Establishment,
+  Commercial Complex, Infrastructure projects etc. Quality and safety are the Hallmarks of RRC. RRC has the relevant
+  registration for various statutory requirements.</p>
+<h5>OUR PRIORITIES AND PRINCIPLES</h5><p>We are committed to clear and sound safety, health and environment policy.
+  We endeavor to achieve our objectives by educating and training our employees to adopt safe method of work,
+  conducting safety trainings,usage of personal protective equipment identification of unsafe acts and conditions and
+  its rectification by continual safety awareness program.</p></div>
+
+<div class="row">
+<div class="col-md-4" *ngFor="let item of checkbox">
+<input class="form-check-input" type="checkbox" id="chk1" checked>
+<label class="form-check-label" for="chk1">{{item.check}}</label></div>
+
+</div>
+
+<h6>RESOURCES</h6>
+<table class="table table-striped col-md-10">
+<thead><tr>
+<th scope="col">NO OF STAFF</th>
+<th scope="col">TECHNICAL STAFF</th>
+<th scope="col">QUALIFICATION</th>
+<th scope="col">EXPERIENCE</th>
+</tr></thead>
+<tbody>
+<tr *ngFor="let item of resources">
+  <th scope="row">{{item.no}}</th>
+  <td>{{item.staff}}</td>
+  <td>{{item.qualification}}</td>
+  <td>{{item.exp}}</td>
+</tr>
+
+<tr>
+  <th scope="row">10</th>
+  <td>Safety Manager/Officer</td>
+  <td>Safety Course/ Safety Graduate</td>
+  <td>10-15 Yrs Industrial</td>
+</tr>
+</tbody>
+</table>
+<table class="table col-md-10">
+<thead><tr>
+<th scope="col">NO OF STAFF</th>
+<th scope="col">ADMINISTRATIVE STAFF</th>
+<th scope="col">QUALIFICATION</th>
+<th scope="col">EXPERIENCE</th>
+</tr></thead>
+<tbody> <tr>
+<th scope="row">6</th>
+<td>Accountants</td>
+<td>C.A/B.Com</td>
+<td>12-15 Yrs industrial</td>
+</tr>
+<tr>
+<th scope="row">10</th>
+<td>Purchase/Store</td>
+<td>Technical/Any Graduate</td>
+<td>10-15 Yrs Industrial</td>
+</tr></tbody>
+</table>
+
+<h6>ORGANISATION Chart</h6>
+<div class="container">
+<div class="row mt-5" >
+<div class="col-md-4" *ngFor="let item of chart">
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{item.title}}</h5>
+      <p class="card-text">{{item.name}}</p>
+  </div>
+</div>
+</div>
+
+
+<router-outlet></router-outlet>

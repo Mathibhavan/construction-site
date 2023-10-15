@@ -1,0 +1,53 @@
+<body>
+<section class="pt-4">
+  <div class="container px-lg-5">
+  <div class="row gx-lg-5">
+          <div class="col-lg-6 col-xxl-4 mb-5" *ngFor="let item of imageURL">
+              <div class="card border-0 h-100">
+                  <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                      <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"></div>
+                      <h2 class="fs-4 fw-bold">{{item.name}}</h2>
+                      <img [src]="item.image">
+                  </div>
+              </div>
+          </div>
+</div></div>
+</section>
+<h4>PROJECT COMPLETED FOR LAST FIVE YEARS</h4>
+   <table class="table col-md-6">
+    <thead><tr>
+      <th scope="col">S.NO</th>
+      <th scope="col">NAME OF THE PROJECT</th>
+      <th scope="col">PROJECT COST</th>
+      <th scope="col">TIME OF COMPLETION</th>
+    </tr></thead>
+    <tbody> <tr *ngFor="let item of projects">
+      <th scope="row">{{item.no}}</th>
+      <td>{{item.prj}}</td>
+      <td>{{item.cost}}</td>
+      <td>{{item.time}}</td>
+    </tr>
+    </tbody>
+  </table>
+  <h4>ONGOING PROJECTS</h4>
+  <table class="table col-md-10">
+    <thead><tr>
+      <th scope="col">S.NO</th>
+      <th scope="col">NAME OF THE PROJECT</th>
+      <th scope="col">PROJECT COST</th>
+      <th scope="col">PER OF COMPLETION</th>
+    </tr></thead>
+    <tbody><tr>
+      <th scope="row">1</th>
+      <td>Ampa Mall</td>
+      <td>45 Crores(1,50,000 Sq.ft)</td>
+      <td>25% Completed</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>CFC Limited</td>
+      <td>30 Crores(1,12,000 Sq.ft)</td>
+      <td>40% Completed</td>
+    </tr></tbody>
+  </table></body>
+<router-outlet></router-outlet>

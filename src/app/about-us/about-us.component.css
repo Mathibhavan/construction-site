@@ -1,0 +1,28 @@
+.container{
+  font-style: italic !important;
+  margin-left: 2em !important;
+  margin-top: 2em !important;
+  }
+h6{
+  margin-left: 2em !important;
+  font-style: italic !important;
+  padding-top: 0.8em !important;
+  font-size: larger;
+}
+h5{
+  font-style: italic !important;
+   padding-top: 1em !important;
+}
+table{
+  font-style: italic !important;
+  margin-left: 2em !important;
+}
+img{
+  height: 20% !important;
+  width: 70% !important;
+  margin-top: 1.5Sem !important;
+  margin-left: 6em !important;
+}
+.row{
+  margin-left: 2em !important;
+}
